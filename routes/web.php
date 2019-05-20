@@ -32,7 +32,10 @@ Route::get('/admin/voyage', function () {
     informations concernant l’entreprise";
 });
 
-Route::get('/admin/users', function () {
-    return "Ceci est la page users de la console
-    d’administration";
+Route::get('/admin', function () {
+    return view('admin_index');
 });
+
+Route::get('/admin/tables', function () {
+    return view('admin_tables');
+})->name('tables');
