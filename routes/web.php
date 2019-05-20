@@ -12,20 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('home');
-});
+    return view('index');
+})->name('index');
 
 Route::get('/voyages', function () {
     return view('destination');
-});
+})->name('voyages');
 
-Route::get('/voyages/id', function () {
+Route::get('/voyages/{id}', function ($id) {
     return view('show');
-});
+})->name('voyage');
 
 Route::get('/a_propos', function () {
     return view('a_propos');
-});
+})->name('about');
 
 Route::get('/admin/voyage', function () {
     return " Ceci est la page qui affichera les

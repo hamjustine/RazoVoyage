@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="{{ asset('fonts/icomoon/style.css') }}">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/jquery-ui.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-datepicker.css') }}">
 
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="{{ asset('fonts/flaticon/font/flaticon.css') }}">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
 
 
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     
   </head>
   <body>
@@ -45,17 +45,17 @@
         <div class="row align-items-center">
           
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0">Travelers</a></h1>
+            <h1 class="mb-0"><a href="{{route('index')}}" class="text-black h2 mb-0">Travelers</a></h1>
           </div>
           <div class="col-10 col-md-8 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li class="active">
-                  <a href="index.html">Home</a>
+                  <a href="{{route('index')}}">Home</a>
                 </li>
                 <li class="has-children">
-                  <a href="destination.html">Destinations</a>
+                  <a href="{{route('voyages')}}">Destinations</a>
                   <ul class="dropdown">
                     <li><a href="#">Japan</a></li>
                     <li><a href="#">Europe</a></li>
@@ -65,7 +65,7 @@
                 </li>
                 
                 <li><a href="discount.html">Discount</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="{{route('about')}}">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 
                 <li><a href="contact.html">Contact</a></li>
@@ -125,15 +125,15 @@
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Destination</a></li>
+                  <li><a href="{{route('index')}}">Home</a></li>
+                  <li><a href="{{route('voyages')}}">Destination</a></li>
                   <li><a href="#">Services</a></li>
-                  <li><a href="#">About</a></li>
+                  <li><a href="{{route('about')}}">About</a></li>
                 </ul>
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
+                  <li><a href="{{route('about')}}">About Us</a></li>
                   <li><a href="#">Privacy Policy</a></li>
                   <li><a href="#">Contact Us</a></li>
                   <li><a href="#">Discounts</a></li>
@@ -187,19 +187,19 @@
     </footer>
   </div>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/aos.js"></script>
+  <script src="{{ asset('js/jquery-3.3.1.min.js')}}"></script>
+  <script src="{{ asset('js/jquery-migrate-3.0.1.min.js')}}"></script>
+  <script src="{{ asset('js/jquery-ui.js')}}"></script>
+  <script src="{{ asset('js/popper.min.js')}}"></script>
+  <script src="{{ asset('js/bootstrap.min.js')}}"></script>
+  <script src="{{ asset('js/owl.carousel.min.js')}}"></script>
+  <script src="{{ asset('js/jquery.stellar.min.js')}}"></script>
+  <script src="{{ asset('js/jquery.countdown.min.js')}}"></script>
+  <script src="{{ asset('js/jquery.magnific-popup.min.js')}}"></script>
+  <script src="{{ asset('js/bootstrap-datepicker.min.js')}}"></script>
+  <script src="{{ asset('js/aos.js')}}"></script>
 
-  <script src="js/main.js"></script>
+  <script src="{{ asset('js/main.js')}}"></script>
     
   </body>
 </html>

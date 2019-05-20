@@ -7,7 +7,7 @@
 
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
               <h1 class="text-white font-weight-light">About Travelers</h1>
-              <div><a href="index.html">Home</a> <span class="mx-2 text-white">&bullet;</span> <span class="text-white">About</span></div>
+              <div><a href="{{route('index')}}">Home</a> <span class="mx-2 text-white">&bullet;</span> <span class="text-white">About</span></div>
               
             </div>
           </div>

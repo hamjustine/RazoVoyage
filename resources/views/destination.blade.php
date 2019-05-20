@@ -23,7 +23,7 @@
         
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <a href="#" class="unit-1 text-center">
+            <a href="{{	route('voyage',	['id'=>1])}}" class="unit-1 text-center">
               <img src="images/01-greece.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$590</strong>
@@ -32,7 +32,7 @@
             </a>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <a href="#" class="unit-1 text-center">
+            <a href="{{	route('voyage',	['id'=>2])}}" class="unit-1 text-center">
               <img src="images/02-rome.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$390</strong>
@@ -41,7 +41,7 @@
             </a>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <a href="#" class="unit-1 text-center">
+            <a href="{{	route('voyage',	['id'=>3])}}" class="unit-1 text-center">
               <img src="images/03-japan.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$390</strong>
@@ -51,7 +51,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <a href="#" class="unit-1 text-center">
+            <a href="{{	route('voyage',	['id'=>4])}}" class="unit-1 text-center">
               <img src="images/04-dubai.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$320</strong>
@@ -60,7 +60,7 @@
             </a>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <a href="#" class="unit-1 text-center">
+            <a href="{{	route('voyage',	['id'=>5])}}" class="unit-1 text-center">
               <img src="images/05-london.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$290</strong>
@@ -69,7 +69,7 @@
             </a>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <a href="#" class="unit-1 text-center">
+            <a href="{{	route('voyage',	['id'=>5])}}" class="unit-1 text-center">
               <img src="images/06-australia.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$390</strong>
