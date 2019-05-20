@@ -12,21 +12,19 @@
 */
 
 Route::get('/', function () {
-    return " Ceci est la page d’accueil";
+    return view('home');
 });
 
 Route::get('/voyages', function () {
-    return " Ceci est la page qui affichera tous les voyages";
+    return view('destination');
 });
 
 Route::get('/voyages/id', function () {
-    return " Ceci est la page qui affichera le detail
-    d’un voyage identifié par $id_voyage";
+    return view('show');
 });
 
 Route::get('/a_propos', function () {
-    return " Ceci est la page qui affichera les
-    informations concernant l’entreprise";
+    return view('a_propos');
 });
 
 Route::get('/admin/voyage', function () {
