@@ -23,9 +23,7 @@ Route::get('/voyages/{id}', function ($id) {
     return view('show');
 })->name('voyage');
 
-Route::get('/a_propos', function () {
-    return view('a_propos');
-})->name('about');
+Route::get('/a_propos', 'StaticPageController@about')->name('about');
 
 Route::get('/admin/voyage', function () {
     return " Ceci est la page qui affichera les
@@ -33,9 +31,9 @@ Route::get('/admin/voyage', function () {
 });
 
 Route::get('/admin', function () {
-    return view('admin_index');
+    return view('admin/admin_index');
 });
 
 Route::get('/admin/tables', function () {
-    return view('admin_tables');
+    return view('admin/admin_tables');
 })->name('tables');

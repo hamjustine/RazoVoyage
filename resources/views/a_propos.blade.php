@@ -24,8 +24,13 @@
           </div>
           <div class="col-md-6 pl-md-5">
             <h2 class="font-weight-light text-black mb-4">About Company</h2>
+            @dump($message)
+            @if ($message == true)
+            <p>Lorem TRUE dolor sit amet, consectetur adipisicing elit. Vitae cumque eius modi expedita accusamus alias error totam ab magnam a mollitia magni, distinctio temporibus optio illo sapiente, odio unde natus.</p>
+            @else
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque eius modi expedita accusamus alias error totam ab magnam a mollitia magni, distinctio temporibus optio illo sapiente, odio unde natus.</p>
 
+            @endif
             <ul class="list-unstyled">
               <li class="d-flex align-items-center"><span class="icon-check2 text-primary h3 mr-2"></span><span>Vitae cumque eius modi expedita</span></li>
               <li class="d-flex align-items-center"><span class="icon-check2 text-primary h3 mr-2"></span><span>Totam at maxime Accusantium</span></li>
