@@ -22,61 +22,17 @@
       <div class="container">
         
         <div class="row">
+          @foreach ($voyages as voyage)
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <a href="{{	route('voyage',	['id'=>1])}}" class="unit-1 text-center">
-              <img src="images/01-greece.jpg" alt="Image" class="img-fluid">
+            <a href="{{route('voyage',['id'=> $voyage->id])}}" class="unit-1 text-center">
+              <img src="{{$voyage->image}}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
-                <strong class="text-primary mb-2 d-block">$590</strong>
-                <h3 class="unit-1-heading">Santorini, Greece</h3>
+                <strong class="text-primary mb-2 d-block">{{$voyage->prix}}$</strong>
+                <h3 class="unit-1-heading">{{$voyage->destination}}</h3>
               </div>
             </a>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <a href="{{	route('voyage',	['id'=>2])}}" class="unit-1 text-center">
-              <img src="images/02-rome.jpg" alt="Image" class="img-fluid">
-              <div class="unit-1-text">
-                <strong class="text-primary mb-2 d-block">$390</strong>
-                <h3 class="unit-1-heading">Rome, Italy</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <a href="{{	route('voyage',	['id'=>3])}}" class="unit-1 text-center">
-              <img src="images/03-japan.jpg" alt="Image" class="img-fluid">
-              <div class="unit-1-text">
-                <strong class="text-primary mb-2 d-block">$390</strong>
-                <h3 class="unit-1-heading">Mount Fuji, Japan</h3>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <a href="{{	route('voyage',	['id'=>4])}}" class="unit-1 text-center">
-              <img src="images/04-dubai.jpg" alt="Image" class="img-fluid">
-              <div class="unit-1-text">
-                <strong class="text-primary mb-2 d-block">$320</strong>
-                <h3 class="unit-1-heading">Camels, Dubai</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <a href="{{	route('voyage',	['id'=>5])}}" class="unit-1 text-center">
-              <img src="images/05-london.jpg" alt="Image" class="img-fluid">
-              <div class="unit-1-text">
-                <strong class="text-primary mb-2 d-block">$290</strong>
-                <h3 class="unit-1-heading">Elizabeth Tower, London</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <a href="{{	route('voyage',	['id'=>5])}}" class="unit-1 text-center">
-              <img src="images/06-australia.jpg" alt="Image" class="img-fluid">
-              <div class="unit-1-text">
-                <strong class="text-primary mb-2 d-block">$390</strong>
-                <h3 class="unit-1-heading">Opera House, Australia</h3>
-              </div>
-            </a>
-          </div>
+@endforeach
         </div>
       </div>
     

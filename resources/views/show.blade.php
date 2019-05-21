@@ -6,7 +6,7 @@
           <div class="row align-items-center justify-content-center text-center">
 
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-              <h1 class="text-white font-weight-light">Book A Tour</h1>
+              <h1 class="text-white font-weight-light">{{$voyage->titre}}</h1>
               <div><a href="{{	route('index')}}	">Home</a> <span class="mx-2 text-white">&bullet;</span> <span class="text-white">Booking</span></div>
               
             </div>
@@ -65,11 +65,8 @@
                 <div class="col-md-12">
                   <label class="text-black" for="treatment">Destination</label> 
                   <select name="treatment" id="treatment" class="form-control">
-                    <option value="">Japan</option>
-                    <option value="">Europe</option>
-                    <option value="">China</option>
-                    <option value="">France</option>
-                    <option value="">Philippines</option>
+                    <option value="">{{$voyage->destination}}</option>
+
                   </select>
                 </div>
               </div>
@@ -95,10 +92,9 @@
             
             
             <div class="p-4 mb-3 bg-white">
-              <img src="{{ asset('images/hero_bg_1.jpg')}}" alt="Image" class="img-fluid mb-4 rounded">
+              <img src="{{$voyage->image}}" alt="Image" class="img-fluid mb-4 rounded">
               <h3 class="h5 text-black mb-3">More Info</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad iure porro mollitia architecto hic consequuntur. Distinctio nisi perferendis dolore, ipsa consectetur? Fugiat quaerat eos qui, libero neque sed nulla.</p>
-              <p><a href="#" class="btn btn-primary px-4 py-2 text-white">Learn More</a></p>
+              <p>{{$voyage->description}}</p>
             </div>
 
           </div>

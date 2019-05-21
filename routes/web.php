@@ -11,17 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-})->name('index');
+Route::get('/', 'VoyagesController@index')->name('index');
 
-Route::get('/voyages', function () {
-    return view('destination');
-})->name('voyages');
+Route::get('/voyages','VoyagesController@voyages')->name('voyages');
 
-Route::get('/voyages/{id}', function ($id) {
-    return view('show');
-})->name('voyage');
+Route::get('/voyages/{voyage}','VoyagesController@show')->name('voyage');
 
 Route::get('/a_propos', 'StaticPageController@about')->name('about');
 
