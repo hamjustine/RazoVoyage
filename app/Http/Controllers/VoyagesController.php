@@ -22,7 +22,7 @@ class VoyagesController extends Controller
     public function voyages()
     {
         $voyages = Voyage::all();
-        return view('destination', [
+        return view('voyages', [
             'voyages' => $voyages,
         ]);
     }
