@@ -1,5 +1,6 @@
 @extends('layouts.admin')
 @section('content')
+@auth
             <!-- Small Stats Blocks -->
             <div class="row">
               <div class="col-lg col-md-6 col-sm-6 mb-4">
@@ -324,4 +325,7 @@
                   </div>
                 </div>
               </div>
+@else
+  {{ Redirect::to('home') }}
+@endauth
 @endsection
