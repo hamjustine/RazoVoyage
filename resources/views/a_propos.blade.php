@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.razo')
 @section('content')
 
 <div class="site-blocks-cover inner-page-cover" style="background-image: url(images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">

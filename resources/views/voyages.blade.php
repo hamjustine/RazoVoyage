@@ -22,17 +22,17 @@
       <div class="container">
         
         <div class="row">
-          @foreach ($voyages as voyage)
+@foreach ($voyages as $voyage)
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="{{route('voyage',['id'=> $voyage->id])}}" class="unit-1 text-center">
               <img src="{{$voyage->image}}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">{{$voyage->prix}}$</strong>
                 <h3 class="unit-1-heading">{{$voyage->destination}}</h3>
-              </div>
+               </div>
             </a>
           </div>
-@endforeach
+@endforeach 
         </div>
       </div>
     

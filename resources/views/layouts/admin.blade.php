@@ -26,8 +26,7 @@
             <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
               <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
                 <div class="d-table m-auto">
-                  <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/shards-dashboards-logo.svg" alt="Shards Dashboard">
-                  <span class="d-none d-md-inline ml-1">Shards Dashboard</span>
+                  <span class="d-none d-md-inline ml-1">Razo Voyage</span>
                 </div>
               </a>
               <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
@@ -46,34 +45,17 @@
           </form>
           <div class="nav-wrapper">
             <ul class="nav flex-column">
+
               <li class="nav-item">
-                <a class="nav-link active" href="index.html">
-                  <i class="material-icons">edit</i>
-                  <span>Blog Dashboard</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="components-blog-posts.html">
-                  <i class="material-icons">vertical_split</i>
-                  <span>Blog Posts</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="add-new-post.html">
+                <a class="nav-link " href="{{route('newPost')}}">
                   <i class="material-icons">note_add</i>
-                  <span>Add New Post</span>
+                  <span>Ajouter un voyage</span>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="form-components.html">
-                  <i class="material-icons">view_module</i>
-                  <span>Forms &amp; Components</span>
-                </a>
-              </li>
+
               <li class="nav-item">
                 <a class="nav-link " href="{{route('tables')}}">
                   <i class="material-icons">table_chart</i>
-                  <span>Tables</span>
+                  <span>Voyages actifs</span>
                 </a>
               </li>
               <li class="nav-item">
@@ -143,7 +125,7 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <img class="user-avatar rounded-circle mr-2" src="images/avatars/0.jpg" alt="User Avatar">
+                    <img class="user-avatar rounded-circle mr-2" src="{{ asset ('images/avatars/0.jpg')}}" alt="User Avatar">
                     <span class="d-none d-md-inline-block">Sierra Brooks</span>
                   </a>
                   <div class="dropdown-menu dropdown-menu-small">
@@ -214,5 +196,6 @@
     <script src="{{ asset('scripts/extras.1.1.0.min.js')}}"></script>
     <script src="{{ asset('scripts/shards-dashboards.1.1.0.min.js')}}"></script>
     <script src="{{ asset('scripts/app/app-blog-overview.1.1.0.js')}}"></script>
+    
   </body>
 </html>

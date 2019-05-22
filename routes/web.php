@@ -28,6 +28,20 @@ Route::get('/admin', function () {
     return view('admin/admin_index');
 });
 
-Route::get('/admin/tables', function () {
-    return view('admin/admin_tables');
-})->name('tables');
+// Route::get('/admin/add-new-post', function(){
+//     return view('admin/new_posts');
+// })->name('newpost');
+
+Route::get('/coucou', function(){
+    return 'coucou';
+});
+
+Route::get('/admin/add-new-post', 'PostController@create')->name('newPost');
+Route::post('/admin/add-new-post', 'PostController@store')->name('addPost');
+Route::get('/admin/update-post/{voyage}', 'PostController@show')->name('showPost');
+Route::post('/admin/update-post/{voyage}', 'PostController@update')->name('updatePost');
+Route::get('/admin/tables/{voyage}', 'PostController@destroy')->name('deletePost');
+Route::get('/admin/tables', 'PostController@index')->name('tables');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
